@@ -54,7 +54,7 @@ public class PrincipalConBusqueda {
                 //    System.out.println( miConversion);
 
                 System.out.println("Ingrese el valor que desea convertir:");
-                var cantidad = lectura.nextInt();
+                var cantidad = lectura.nextDouble();
                 miConversion.setCantidadMoneda(cantidad);
                 System.out.println("El valor de: "+ cantidad +"["+monedas[0]+"] corresponde al valor final de =>>>" + miConversion.convierteMoneda()+"["+monedas[1]+"]");
             }catch (ErrorEnConversionDeDuracionException e) {   // cuando hay falla en la url de la api, reporta 0

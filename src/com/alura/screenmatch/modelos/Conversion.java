@@ -6,7 +6,7 @@ public class Conversion implements Comparable<Conversion>{
     private String nombre;
     private double tasaConversion;
     private String conexion;
-    private int cantidadMoneda;
+    private double cantidadMoneda;
 
 
     public Conversion(String nombre, double tasaConversion, String conexion) {
@@ -36,7 +36,7 @@ public class Conversion implements Comparable<Conversion>{
         return conexion;
     }
 
-    public int getCantidadMoneda() {
+    public double getCantidadMoneda() {
         return cantidadMoneda;
     }
 
@@ -48,7 +48,7 @@ public class Conversion implements Comparable<Conversion>{
         this.tasaConversion = tasaConversion;
     }
 
-    public void setCantidadMoneda(int cantidadMoneda) {
+    public void setCantidadMoneda(double cantidadMoneda) {
         this.cantidadMoneda = cantidadMoneda;
     }
 
