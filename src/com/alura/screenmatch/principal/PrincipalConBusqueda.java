@@ -45,7 +45,7 @@ public class PrincipalConBusqueda {
                         .send(request, HttpResponse.BodyHandlers.ofString());
 
                 String json = response.body();
-                System.out.println(json);
+                //System.out.println(json);
 
                 ConversionEXC miConversionEXC = gson.fromJson(json, ConversionEXC.class);
                 //System.out.println(miConversionEXC);
